@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>MedRepo Dashboard</title>
+    <link rel="stylesheet" href="dashboard.css">
+</head>
+<body>
+    <!-- Sidebar -->
+    <div class="sidebar">
+        <h2>MEDREPO</h2>
+        <ul class="nav">
+            <li><a href="#">Upload Documents</a></li>
+            <li><a href="#">Reports</a></li>
+            <li><a href="#">Analysis</a></li>
+            <li><a href="#">Appointments</a></li>
+            <li><a href="#">Settings</a></li>
+        </ul>
+        <div class="profile">
+            <img src="user-profile.png" alt="Profile" class="profile-pic">
+            <span>Amanda</span>
+            <a href="#">View profile</a>
+        </div>
+    </div>
+
+    <!-- Main Content -->
+    <div class="main-content">
+        <header class="header">
+            <div class="header-right">
+                <img src="bell-icon.png" alt="Notifications" class="icon">
+                <img src="settings-icon.png" alt="Settings" class="icon">
+                <img src="profile-icon.png" alt="Profile" class="icon">
+            </div>
+        </header>
+
+        <section class="health-summary">
+            <h2>Health Summary</h2>
+            <div class="summary-stats">
+                <div class="stat-box">
+                    <h3>Recent Reports</h3>
+                    <p>5</p>
+                    <span class="stat-percentage">-70%</span>
+                </div>
+                <div class="stat-box">
+                    <h3>Flagged Alerts</h3>
+                    <p>3</p>
+                    <span class="stat-percentage">-50%</span>
+                </div>
+                <div class="stat-box">
+                    <h3>Health Tips</h3>
+                    <p>8</p>
+                    <span class="stat-percentage">+90%</span>
+                </div>
+            </div>
+        </section>
+
+        <section class="upload-documents">
+            <h3>Upload Documents</h3>
+            <div class="upload-box">
+                <img src="upload-icon.png" alt="Upload">
+                <p>Drag and drop files here or click to upload</p>
+            </div>
+        </section>
+
+        <section class="personalized-tips">
+            <h3>Personalized Tips & Alerts</h3>
+            <table class="alerts-table">
+                <thead>
+                    <tr>
+                        <th>Alert ID</th>
+                        <th>Title</th>
+                        <th>Priority</th>
+                        <th>Tags</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>001</td>
+                        <td>Drink More Water</td>
+                        <td><select><option>Dropdown</option></select></td>
+                        <td><span class="tag">hydration</span><span class="tag">wellness</span></td>
+                    </tr>
+                    <tr>
+                        <td>002</td>
+                        <td>Take Regular Breaks</td>
+                        <td><select><option>Dropdown</option></select></td>
+                        <td><span class="tag">productivity</span><span class="tag">wellness</span></td>
+                    </tr>
+                    <tr>
+                        <td>003</td>
+                        <td>Schedule Annual Checkup</td>
+                        <td><select><option>Dropdown</option></select></td>
+                        <td><span class="tag">health</span><span class="tag">reminder</span></td>
+                    </tr>
+                </tbody>
+            </table>
+        </section>
+
+        <section class="health-trends">
+            <h3>Health Trends</h3>
+            <div class="trends-tabs">
+                <button class="active">Day</button>
+                <button>Week</button>
+                <button>Month</button>
+            </div>
+            <div class="charts">
+                <div class="chart">
+                    <h4>Daily Step Count</h4>
+                    <img src="step-chart.png" alt="Step Count Chart">
+                </div>
+                <div class="chart">
+                    <h4>Caloric Intake vs Burn</h4>
+                    <img src="calorie-chart.png" alt="Caloric Chart">
+                </div>
+            </div>
+        </section>
+    </div>
+</body>
+</html>
